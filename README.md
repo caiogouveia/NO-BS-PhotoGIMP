@@ -189,6 +189,101 @@ On Linux, the patch also installs:
 
 ---
 
+## 🎹 Keyboard Shortcuts Compatibility
+
+> Shortcuts follow [Adobe Photoshop's official documentation](https://helpx.adobe.com/photoshop/using/default-keyboard-shortcuts.html) (Windows version).
+>
+> **Legend:** ✅ Matches Photoshop · ⚠️ Different key · ❌ Not mapped by PhotoGIMP
+
+### Tools
+
+| Action | Photoshop | PhotoGIMP | Status |
+|---|---|---|---|
+| Move | `V` | `V` | ✅ |
+| Rectangular Marquee | `M` | `M` | ✅ |
+| Elliptical Marquee | `Shift+M` | `Shift+M` | ✅ |
+| Lasso | `L` | `L` | ✅ |
+| Magic Wand / Quick Selection | `W` | `W` | ✅ |
+| Crop | `C` | `C` | ✅ |
+| Eyedropper | `I` | `I` | ✅ |
+| Healing Brush | `J` | `J` | ✅ |
+| Brush | `B` | `B` | ✅ |
+| Clone Stamp | `S` | `S` | ✅ |
+| Eraser | `E` | `E` | ✅ |
+| Gradient | `G` | `G` | ✅ |
+| Paint Bucket | `Shift+G` | `Shift+G` | ✅ |
+| Dodge / Burn | `O` | `O` | ✅ |
+| Smudge | `Shift+R` ¹ | `R` | ⚠️ |
+| Blur / Sharpen | `Shift+R` ¹ | `Shift+R` | ⚠️ |
+| Text | `T` | `T` | ✅ |
+| Pen | `P` | `P` | ✅ |
+| Path / Direct Selection | `A` | `A` | ✅ |
+| Hand | `H` | — ² | ❌ |
+| Zoom | `Z` | `Z` | ✅ |
+| Default Colors | `D` | `D` | ✅ |
+| Swap Colors | `X` | `X` | ✅ |
+| Quick Mask Toggle | `Q` | `Q` | ✅ |
+| Full Screen | `F` | `F` | ✅ |
+
+¹ In modern Photoshop, `R` is Rotate View. Smudge and Blur/Sharpen are accessed via `Shift+R` cycling within the group.
+² GIMP has no Hand tool. Use `Space+move` to pan (no click needed — works differently from Photoshop's `Space+click+drag`).
+
+### Editing & Fill
+
+| Action | Photoshop | PhotoGIMP | Status |
+|---|---|---|---|
+| Fill with Foreground | `Alt+Backspace` | `Alt+Backspace` | ✅ |
+| Fill with Background | `Ctrl+Backspace` | `Ctrl+Backspace` | ✅ |
+| Free Transform | `Ctrl+T` | `Ctrl+T` | ✅ |
+| Scale | _(within transform)_ | `Shift+T` | ⚠️ |
+
+### Layers
+
+| Action | Photoshop | PhotoGIMP | Status |
+|---|---|---|---|
+| Duplicate Layer | `Ctrl+J` | `Ctrl+J` | ✅ |
+| Merge Down | `Ctrl+E` | `Ctrl+E` | ✅ |
+| New Layer Group | `Ctrl+G` | `Ctrl+G` | ✅ |
+| Ungroup / Merge Group | `Ctrl+Shift+G` | `Ctrl+Shift+G` | ⚠️ ³ |
+| Layer Opacity 10–90% | `1`–`9` | `1`–`9` | ✅ |
+| Layer Opacity 100% | `0` | `0` | ✅ |
+| Alpha to Selection | _Ctrl+click thumbnail_ | `Ctrl+Alt+A` | ⚠️ ⁴ |
+
+³ In Photoshop `Ctrl+Shift+G` dissolves the group keeping layers separate. In GIMP it merges the group into a single layer.
+⁴ GIMP does not support Ctrl+click on the layer thumbnail. `Ctrl+Alt+A` is the keyboard equivalent.
+
+### Selection
+
+| Action | Photoshop | PhotoGIMP | Status |
+|---|---|---|---|
+| Deselect | `Ctrl+D` | `Ctrl+D` | ✅ |
+
+### View & Zoom
+
+| Action | Photoshop | PhotoGIMP | Status |
+|---|---|---|---|
+| Zoom In | `Ctrl+=` | `Ctrl+=` | ✅ |
+| Zoom Out | `Ctrl+-` | `Ctrl+-` | ✅ |
+| Fit on Screen | `Ctrl+0` | `Ctrl+0` | ✅ |
+
+### Image & Canvas
+
+| Action | Photoshop | PhotoGIMP | Status |
+|---|---|---|---|
+| Image Size | `Ctrl+Alt+I` | `Ctrl+Alt+I` | ✅ |
+| Canvas Size | `Ctrl+Alt+C` | `Ctrl+Alt+C` | ✅ |
+
+### Brush
+
+| Action | Photoshop | PhotoGIMP | Status |
+|---|---|---|---|
+| Decrease brush size | `[` | `[` | ✅ |
+| Increase brush size | `]` | `]` | ✅ |
+| Decrease brush hardness | `{` | `{` | ✅ |
+| Increase brush hardness | `}` | `}` | ✅ |
+
+---
+
 ## 🗑 How to Uninstall
 
 To remove PhotoGIMP and restore GIMP to its default state, simply delete GIMP's config folder and reopen GIMP — it will regenerate fresh default settings.
