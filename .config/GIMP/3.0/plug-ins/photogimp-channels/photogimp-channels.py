@@ -45,6 +45,7 @@ class PhotoGimpChannels(Gimp.PlugIn):
             name
         )
         procedure.set_attribution('PhotoGIMP', 'PhotoGIMP', '2025')
+        procedure.add_menu_path('<Image>/Filters/PhotoGIMP')
         return procedure
 
     def run(self, procedure, run_mode, image, drawables, config, run_data):
