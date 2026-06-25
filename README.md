@@ -6,6 +6,21 @@
 
 ## ⚙ How to Install
 
+### ⚡ Automated Installation (Linux / macOS)
+
+If you are on Linux or macOS, you can use the automated installer script:
+
+1. Clone or download the repository.
+2. Open your terminal and navigate to the project directory.
+3. Make sure GIMP is completely closed.
+4. Run the installer:
+   ```bash
+   ./install.sh
+   ```
+   *Note: You can run `./install.sh --dry-run` to preview the changes without installing anything.*
+
+---
+
 ### 🐧 Flatpak (Linux)
 
 #### Backup (optional)
